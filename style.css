@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+h3 {
+  margin-top: 8px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  color: #fff;
+  width: 420px;
+  height: 350px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(64, 64, 64);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.img img {
+  width: 216px;
+  height: 236px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.center {
+  text-align: center;
+}
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(102, 102, 102);
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+/* modal  */
+.modal-div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  color: #fff;
+  background-color: rgb(64, 64, 64);
+  width: 850px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+.modal-container {
+  display: none;
+}
+.fa {
+  font-size: 20px;
+  text-align: right;
+  position: absolute;
+  left: 96%;
+  top: 10px;
+  cursor: pointer;
+}
+.bio {
+  margin-bottom: 20px;
+}
+.second {
+  color: #fff;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* responsive  */
+@media only screen and (max-width: 900px) {
+  .flex {
+    display: block;
+  }
+  .card {
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+  .right {
+    width: 100%;
+  }
+  .modal {
+    width: auto;
+    height: auto;
+  }
+  .second {
+    flex-wrap: wrap;
+  }
+}
